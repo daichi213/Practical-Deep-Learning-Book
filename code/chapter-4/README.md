@@ -24,3 +24,14 @@ In this portion of the chapter, we will find the least accurate (worst) performi
 ## Data
 
 We will be using the Caltech101 dataset. Please download the [Caltech101](http://www.vision.caltech.edu/Image_Datasets/Caltech101/101_ObjectCategories.tar.gz) dataset and place it in a `caltech101` directory.
+
+# 尾崎学習
+
+## embeddingについて
+
+画像データなどの高次元特徴量を低次元空間へマッピングする手法のこと。**CNNを使用するとかなり精度よく高次元特徴量をマッピングすることが可能**。  
+応用手法として、距離学習がある。
+
+### 距離学習
+
+実際に使用されている有名な事例は、顔認証システムで、登録時の本人の顔写真と認証時の顔写真をembedding⇒低次元空間でのユークリッド距離に応じて認証する・しないを判定する。
